@@ -4,7 +4,13 @@ import { ServerStyleSheet } from 'styled-components';
 export default function NGDocument() {
   return (
     <Html lang='en'>
-      <Head />
+      <Head>
+        <link rel='icon' type='image/svg' href='favicon.svg' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:wght@400;700&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
       <body>
         <Main />
         <NextScript />

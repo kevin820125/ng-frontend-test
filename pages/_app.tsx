@@ -19,13 +19,13 @@ const config: QueryClientConfig = {
 
 const queryClient = new QueryClient(config);
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel='icon' href='/favicon.svg' />
+        <meta charSet='utf-8' />
         <meta name='robots' content='noindex' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
 
       <QueryClientProvider client={queryClient}>
@@ -37,3 +37,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default App;

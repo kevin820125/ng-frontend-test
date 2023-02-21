@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
 body {
   background-color: ${({ theme }) => theme.colors.black};
+  font-family: 'Lato', sans-serif;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 `;
